@@ -2,11 +2,23 @@
 
 Welcome to this Object-Oriented Programming exercise. This repository is designed to help you practice your skills in Object-Oriented Programming (OOP) and gain experience with Java, UML class diagrams, and [Java Stream API](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html). The exercise in this repository were originally part of a homework assignment from the course *Introduction to Software Engineering* at TUM during the Summer Semester of 2023.
 
+## Table of Contents
+- [Exercise Description](#exercise-description)
+- [Prerequisites](#prerequisites)
+- [Project Structure](#project-structure)
+- [Instructions](#instructions)
+  - [Part 1: Time Slots](#part-1-time-slots)
+  - [Part 2: Skill and StudyLevel](#part-2-skill-and-studylevel)
+  - [Part 3: Person, Student and Instructor](#part-3-person-student-and-instructor)
+  - [Part 4: Tutor Groups](#part-4-tutor-groups)
+  - [Part 5: Analyze Tutor Group Meetings](#part-5-analyze-tutor-group-meetings)
+
+
 ## Exercise Description
 
 In this exercise, we want to implement a university system with tutor groups and time slots for tutor groups, lectures, and possibly other events.
 
-This exercise serves as a test for yourself to see if you have the necessary programming experience for OOP.
+This exercise serves as a test for yourself to see if you have the necessary programming experience for OOP and Software Engineering without struggling.
 
 ## Prerequisites
 
@@ -67,7 +79,7 @@ This exercise serves as a test for yourself to see if you have the necessary pro
 - UML class diagrams typically do not contain constructors, however, in this exercise, they are provided as a means of help for you which constructors you should implement. Do not add any other constructors other than the ones shown in the UML class diagrams.
 - More information on UML class diagrams on [UML Class Diagram Tutorial](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial).
 - `~` in the UML diagram stands for package private.
-- All files for Java classes have already been created in the exercise template. Adapt them as needed. Files for Enums have to be created manually. Make sure to use the correct name in the Java file.
+- In the UML diagrams, the green color indicates that I have successfully passed the corresponding test cases.
 
 ### Part 1: Time Slots
 To support tracking the lecture and tutor group times in the university system, we need to implement the following three classes using inheritance and abstraction. Implement the classes `TimeSlot`, `FixedDateTimeSlot` and `WeeklyTimeSlot`.
@@ -81,6 +93,8 @@ To support tracking the lecture and tutor group times in the university system, 
 4. **Implement getDuration**  
     For the implementation of `getDuration()`, take a look at the class `java.time.Duration` and its methods.
 
+![](images/Time_Slots.png)
+
 ### Part 2: Skill and StudyLevel
 The university system should also be able to track whether students fulfill the prerequisites. Therefore, we introduce the concepts of a skill and a study level. Create an interface `Skill` and an Enum `StudyLevel`.
 
@@ -88,6 +102,8 @@ The university system should also be able to track whether students fulfill the 
     `Skill` represents a skill that can be learned by a `Student` and that a `Student` can apply (note the `Student` class is only introduced in the next part, you do not need it for this part). The `Skill` interface should have one abstract method `apply()`. This allows it to be used as a functional interface.
 2. **Create StudyLevel**  
     `StudyLevel` is the level of study, either bachelor or master.
+
+![](images/Skill_and_StudyLevel.png)
 
 ### Part 3: Person, Student and Instructor
 To model the course instructors and the tutor group participants (students), we introduce some more classes. Implement the classes `Person`, `Student`, and `Instructor`.
@@ -98,6 +114,8 @@ To model the course instructors and the tutor group participants (students), we 
     A `Student` is a `Person` and has a matriculation number, a study level, a semester and **sets** of learned skills and acquired knowledge. A student does not know anything at the beginning and has no skills. Hint: make sure to initialize the sets.
 3. **Implement Instructor**  
     An `Instructor` is a `Person` and can `teach`.
+
+![](images/Person_Student_and_Instructor.png)
 
 We also want to implement some functionality for these classes:
 
@@ -128,9 +146,11 @@ Implement the classes `TutorGroup`, `TutorGroupMeeting`, `VirtualTutorGroupMeeti
     - The tutor **says** `See you next time!`.
 4. **Implement LocalTutorGroupMeeting**  
     A `LocalTutorGroupMeeting` is a `TutorGroupMeeting` and has a room. Implement `practise()` as follows:
-    - The tutor says `Thank you for coming to <room> today.` where `<room>` is the local meeting's room.
+    - The tutor **says** `Thank you for coming to <room> today.` where `<room>` is the local meeting's room.
     - Every participating student learns the skill that should be practised in this `TutorGroupMeeting`.
-    - The tutor says `See you next time!`.
+    - The tutor **says** `See you next time!`.
+
+![](images/Tutor_Groups.png)
 
 ### Part 5: Analyze Tutor Group Meetings
 Instructors want to know different kinds of information about tutor group meetings. In this part, you will have to calculate this information using the [Java Stream API](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html).
