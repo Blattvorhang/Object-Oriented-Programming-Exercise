@@ -1,6 +1,6 @@
 # Object-Oriented Programming Exercise
 
-Welcome to this Object-Oriented Programming exercise. This repository is designed to help you practice your skills in Object-Oriented Programming (OOP) and gain experience with Java, UML class diagrams, and [Java Stream API](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html). The exercise in this repository were originally part of a homework assignment from the course *Introduction to Software Engineering* at TUM during the Summer Semester of 2023.
+Welcome to this Object-Oriented Programming exercise. This repository is designed to help you practice your skills in Object-Oriented Programming (OOP) and gain experience with Java, UML class diagrams, and [Java Stream API](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html). The exercises in this repository were originally part of a homework assignment from the course *Introduction to Software Engineering* at TUM during the Summer Semester of 2023.
 
 ## Table of Contents
 - [Exercise Description](#exercise-description)
