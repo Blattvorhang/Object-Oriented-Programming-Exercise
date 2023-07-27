@@ -1,1 +1,2 @@
 # Object-Oriented Programming Exercise
+This repository is taken from a homework from the course *Introduction to Software Engineering* at TUM during the Summer Semester of 2023. It contains basic object-oriented concept, UML class diagrams, as well as Java Stream API. The language is Java using gradle.
