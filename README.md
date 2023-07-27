@@ -79,7 +79,7 @@ This exercise serves as a test for yourself to see if you have the necessary pro
 - UML class diagrams typically do not contain constructors, however, in this exercise, they are provided as a means of help for you which constructors you should implement. Do not add any other constructors other than the ones shown in the UML class diagrams.
 - More information on UML class diagrams on [UML Class Diagram Tutorial](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial).
 - `~` in the UML diagram stands for package private.
-- In the UML diagrams, the green color indicates that I have successfully passed the corresponding test cases.
+- In the UML diagrams, the <span style="color: lightgreen"> green </span> color indicates that I have successfully passed the corresponding test cases.
 
 ### Part 1: Time Slots
 To support tracking the lecture and tutor group times in the university system, we need to implement the following three classes using inheritance and abstraction. Implement the classes `TimeSlot`, `FixedDateTimeSlot` and `WeeklyTimeSlot`.
