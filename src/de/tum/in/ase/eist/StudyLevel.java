@@ -1,6 +1,6 @@
 package de.tum.in.ase.eist;
 
-enum StudyLevel {
+public enum StudyLevel {
     BACHELOR,
     MASTER
 }
